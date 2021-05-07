@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/react-yash-panchal-task-5-pages/static/css/main.b056ec39.chunk.css",
+    "main.js": "/react-yash-panchal-task-5-pages/static/js/main.48f8c7f5.chunk.js",
+    "main.js.map": "/react-yash-panchal-task-5-pages/static/js/main.48f8c7f5.chunk.js.map",
+    "runtime-main.js": "/react-yash-panchal-task-5-pages/static/js/runtime-main.b18ece4c.js",
+    "runtime-main.js.map": "/react-yash-panchal-task-5-pages/static/js/runtime-main.b18ece4c.js.map",
+    "static/css/2.acd75131.chunk.css": "/react-yash-panchal-task-5-pages/static/css/2.acd75131.chunk.css",
+    "static/js/2.8121d80a.chunk.js": "/react-yash-panchal-task-5-pages/static/js/2.8121d80a.chunk.js",
+    "static/js/2.8121d80a.chunk.js.map": "/react-yash-panchal-task-5-pages/static/js/2.8121d80a.chunk.js.map",
+    "static/js/3.e3e9ddf6.chunk.js": "/react-yash-panchal-task-5-pages/static/js/3.e3e9ddf6.chunk.js",
+    "static/js/3.e3e9ddf6.chunk.js.map": "/react-yash-panchal-task-5-pages/static/js/3.e3e9ddf6.chunk.js.map",
+    "index.html": "/react-yash-panchal-task-5-pages/index.html",
+    "static/css/2.acd75131.chunk.css.map": "/react-yash-panchal-task-5-pages/static/css/2.acd75131.chunk.css.map",
+    "static/css/main.b056ec39.chunk.css.map": "/react-yash-panchal-task-5-pages/static/css/main.b056ec39.chunk.css.map",
+    "static/js/2.8121d80a.chunk.js.LICENSE.txt": "/react-yash-panchal-task-5-pages/static/js/2.8121d80a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b18ece4c.js",
+    "static/css/2.acd75131.chunk.css",
+    "static/js/2.8121d80a.chunk.js",
+    "static/css/main.b056ec39.chunk.css",
+    "static/js/main.48f8c7f5.chunk.js"
+  ]
+}
