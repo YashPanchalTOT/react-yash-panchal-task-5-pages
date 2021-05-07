@@ -14,6 +14,7 @@ class App extends Component {
       userage: null,
       clicked: false,
       userName: null,
+      userList: ["yp_171", "rp_122"],
       userDictionary: {
         "yp_171": {
           "Name": "Panchal Yash Babubhai",
@@ -30,6 +31,7 @@ class App extends Component {
   }  
 
   clickChange = (param, uname) => {
+    console.log(param)
     this.setState({
       clicked: true, 
       user: uname,
@@ -40,34 +42,32 @@ class App extends Component {
   }
 
   render() {
-    // console.log(this.state.userDictionary.yp_171)
-    // console.log(this.state.userDictionary.yp_171.Age)
+    const array_list = this.state.userList;
     var {userDictionary, clicked, user} = this.state;
     var {username, userage, usercity} = this.state;
     return (
       <div className="App bg-dark" style={{height: "100vh"}}>
-      <Container className="mx-auto py-3">
-        <Row className="py-2">
-          <span className="col my-auto text-start">
-            <span className="text-white h2">
-              yp_171
-            </span>
-          </span>
-          <Col>
-            <Button variant="info" onClick={() => this.clickChange(userDictionary.yp_171, "yp_171")}>Click Here To See More</Button>
-          </Col>
-        </Row>
-        <Row className="py-2">
-          <span className="col my-auto text-start">
-            <span className="text-white h2">
-              rp_122
-            </span>
-          </span>
-          <Col>
-            <Button variant="info" onClick={() => this.clickChange(userDictionary.rp_122, "rp_122")}>Click Here To See More</Button>
-          </Col>
-        </Row>
-      </Container>
+        <ul>
+          {
+            array_list.map((item) => {
+              console.log(item);
+              return(
+                <Container className="mx-auto py-3">
+                  <Row className="py-2">
+                    <span className="col my-auto text-start">
+                      <span className="text-white h2">
+                        {item}
+                      </span>
+                    </span>
+                    <Col>
+                      <Button variant="info" onClick={() => this.clickChange(userDictionary[item], item)}>Click Here To See More</Button>
+                    </Col>
+                  </Row>
+                </Container>
+              )
+            })  
+          }
+      </ul>
       {
         clicked === true ?
           <>
@@ -89,6 +89,7 @@ class App extends Component {
     </div>
     );
   }
+
 }
 
 export default App;
